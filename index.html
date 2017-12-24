@@ -360,7 +360,15 @@
       
         
           
-            
+            <h1 id="Node-Express"><a href="#Node-Express" class="headerlink" title="Node + Express"></a>Node + Express</h1><h5 id="ejs-标签"><a href="#ejs-标签" class="headerlink" title="ejs 标签"></a>ejs 标签</h5><ol>
+<li>&lt;%=   %&gt;     从显示效果来看，他直接输出HTML标签到页面上，输出的是转义后的变量值</li>
+<li>&lt;%-  %&gt;      从显示效果上看，他没有直接输出HTML代码到页面上，输出的是没有转义后的变量值</li>
+<li>&lt;%   %&gt;     而这个标签，从显示上看，他循环了出来参数中的值，标签中是javascript逻辑代码，注意括号的开闭合</li>
+</ol>
+<p>　req.query：我用来接收GET方式提交参数<br>　req.body：我用来接收POST提交的参数<br>　req.params：两种都能接收到</p>
+<h4 id="crypto-模块"><a href="#crypto-模块" class="headerlink" title="crypto 模块"></a>crypto 模块</h4><p>加密模块</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> crypto = <span class="built_in">require</span>(<span class="string">'crypto'</span>)</span><br><span class="line"><span class="keyword">const</span> md5 = crypto.createHash(<span class="string">'md5'</span>).digest(<span class="string">'hex'</span>);</span><br><span class="line">md5.update(xxxx); <span class="comment">//这样就可以加密了···</span></span><br></pre></td></tr></table></figure>
+
           
         
       
@@ -577,6 +585,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>

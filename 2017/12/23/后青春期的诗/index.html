@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="随笔," />
 
 
 
@@ -79,14 +79,18 @@
 
 
 
+<meta name="description" content="Node + Expressejs 标签 &amp;lt;%=   %&amp;gt;     从显示效果来看，他直接输出HTML标签到页面上，输出的是转义后的变量值 &amp;lt;%-  %&amp;gt;      从显示效果上看，他没有直接输出HTML代码到页面上，输出的是没有转义后的变量值 &amp;lt;%   %&amp;gt;     而这个标签，从显示上看，他循环了出来参数中的值，标签中是javascript逻辑代码，注意括号">
+<meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
 <meta property="og:title" content="后青春期的诗">
 <meta property="og:url" content="https://wanonder.github.io/2017/12/23/后青春期的诗/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Node + Expressejs 标签 &amp;lt;%=   %&amp;gt;     从显示效果来看，他直接输出HTML标签到页面上，输出的是转义后的变量值 &amp;lt;%-  %&amp;gt;      从显示效果上看，他没有直接输出HTML代码到页面上，输出的是没有转义后的变量值 &amp;lt;%   %&amp;gt;     而这个标签，从显示上看，他循环了出来参数中的值，标签中是javascript逻辑代码，注意括号">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-23T14:21:29.754Z">
+<meta property="og:updated_time" content="2017-12-24T03:52:34.865Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="后青春期的诗">
+<meta name="twitter:description" content="Node + Expressejs 标签 &amp;lt;%=   %&amp;gt;     从显示效果来看，他直接输出HTML标签到页面上，输出的是转义后的变量值 &amp;lt;%-  %&amp;gt;      从显示效果上看，他没有直接输出HTML代码到页面上，输出的是没有转义后的变量值 &amp;lt;%   %&amp;gt;     而这个标签，从显示上看，他循环了出来参数中的值，标签中是javascript逻辑代码，注意括号">
 
 
 
@@ -356,7 +360,15 @@
       
 
       
-        
+        <h1 id="Node-Express"><a href="#Node-Express" class="headerlink" title="Node + Express"></a>Node + Express</h1><h5 id="ejs-标签"><a href="#ejs-标签" class="headerlink" title="ejs 标签"></a>ejs 标签</h5><ol>
+<li>&lt;%=   %&gt;     从显示效果来看，他直接输出HTML标签到页面上，输出的是转义后的变量值</li>
+<li>&lt;%-  %&gt;      从显示效果上看，他没有直接输出HTML代码到页面上，输出的是没有转义后的变量值</li>
+<li>&lt;%   %&gt;     而这个标签，从显示上看，他循环了出来参数中的值，标签中是javascript逻辑代码，注意括号的开闭合</li>
+</ol>
+<p>　req.query：我用来接收GET方式提交参数<br>　req.body：我用来接收POST提交的参数<br>　req.params：两种都能接收到</p>
+<h4 id="crypto-模块"><a href="#crypto-模块" class="headerlink" title="crypto 模块"></a>crypto 模块</h4><p>加密模块</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> crypto = <span class="built_in">require</span>(<span class="string">'crypto'</span>)</span><br><span class="line"><span class="keyword">const</span> md5 = crypto.createHash(<span class="string">'md5'</span>).digest(<span class="string">'hex'</span>);</span><br><span class="line">md5.update(xxxx); <span class="comment">//这样就可以加密了···</span></span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -370,6 +382,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/随笔/" rel="tag"># 随笔</a>
+          
+        </div>
       
 
       
@@ -440,8 +458,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -465,6 +492,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
 
           </nav>
 
@@ -485,6 +521,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Node-Express"><span class="nav-number">1.</span> <span class="nav-text">Node + Express</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#ejs-标签"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">ejs 标签</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#crypto-模块"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">crypto 模块</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
